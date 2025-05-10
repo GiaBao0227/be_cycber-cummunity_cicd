@@ -33,7 +33,7 @@ jobs:
           sudo docker container remove con-cyber_community || true
 
       - name: Xoá image cũ
-        run: sudo docker image remove vulebaolong/img-cyber_community:latest || true
+        run: sudo docker image remove giabao272/img-cyber_community:latest || true
 
       - name: Chạy docker compose (nếu không có image thì sẽ kéo image từ docker hub)
         run: sudo docker compose up -d
